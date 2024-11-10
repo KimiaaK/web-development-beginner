@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #f5f0fe;
+    }
+
+    h1 {
+      font-weight: thin;
+      color: #885df1;
+      font-size: 48px;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: "Courier New", Courier, monospace;
+      color: #272044;
+      text-align: center;
+      font-size: 20px;
+    }
+    button {
+      align-items: center;
+      color: #662eed;
+      background-color: white;
+      padding: 15px 20px;
+      display: block;
+      margin: 0 auto;
+      border: 1px solid #662eed;
+      border-radius: 30px;
+      transition: all 200ms ease-in-out; /* when we touch the button it changes fast so it is not user friendly. We wanna change that. milisecinds*/
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    /* we don't know if it is a button so we want to change the color while hovering*/
+    button:hover {
+      /*hover can be applied on anything like h1 etc.*/
+      background: whitesmoke;
+      color: #662eed;
+      cursor: pointer; /* so when we hover it shows a cursor*/
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    .blue {
+      color: blue;
+    }
+    li {
+      display: inline;
+    }
+    .red {
+      color: red;
+    }
+    .green {
+      color: green;
+    }
+    p {
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    .contact-details {
+      text-align: center;
+      font-size: 12px;
+    }
+    .platform {
+      color: #662eed;
+    }
+  </style>
+  <body>
+    <h1>SheCodes</h1>
+
+    <h2>Coding Workshop</h2>
+    <button>Apply now</button>
+
+    <ul>
+      <a href="https://www.shecodes.io/students" target="_blank">
+        <li class="blue">Coders</li>
+      </a>
+
+      <a href="https://www.shecodes.io/workshops" target="_blank">
+        <li class="red">Courses</li>
+      </a>
+      <a href="https://www.shecodes.io/stories" target="_blank">
+        <li class="green">Stories</li>
+      </a>
+    </ul>
+    <hr />
+    <p>
+      <strong>More info</strong>
+    </p>
+    <img
+      src="https://compote.slate.com/images/ad27ef8a-0ea1-46b7-b515-415c4af18528.jpg"
+      width="300"
+    />
+    <div class="contact-details">
+      <span class="platform">Email:</span> <span>hello@shecodes.io</span>
+      <span class="platform">Instagram:</span> <span>@shecodes.io</span>
+    </div>
+  </body>
+</html>
