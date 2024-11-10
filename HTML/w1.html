@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Georgia, serif;
+        background: radial-gradient(
+          592px at 48.2% 50%,
+          rgba(255, 255, 249, 0.6) 0%,
+          rgb(160, 199, 254) 74.6%
+        );
+      }
+      li {
+        list-style: none;
+      }
+      h1 {
+        font-weight: normal;
+        color: yellow;
+        background: #662eed;
+        font-size: 46px;
+        text-align: center;
+      }
+
+      p {
+        color: rgba(41, 41, 97, 0.87);
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      .blue {
+        color: blue;
+      }
+      li {
+        display: inline;
+      }
+      .free {
+        color: darkmagenta;
+      }
+      .discount {
+        color: blue;
+      }
+      .extra {
+        text-decoration: underline;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        padding: 10px;
+        background: whitesmoke;
+        border: 5px solid #272142;
+        border-radius: 20px 100px 21px 200px;
+      }
+      button {
+        position: relative;
+        color: aliceblue;
+        background-color: #662eed;
+        padding: 15px 20px;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #662eed;
+        border-radius: 30px;
+        transition: all 200ms ease-in-out; /* when we touch the button it changes fast so it is not user friendly. We wanna change that. milisecinds*/
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      /* we don't know if it is a button so we want to change the color while hovering*/
+      button:hover {
+        /*hover can be applied on anything like h1 etc.*/
+        background: whitesmoke;
+        color: #662eed;
+        cursor: pointer; /* so when we hover it shows a cursor*/
+      }
+      .entry {
+        color: #272142;
+        text-align: center;
+      }
+      .secondary {
+        color: red;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>En Route</h1>
+    <div class="entry">
+      Find the best deals<span class="secondary"> HERE!</span>
+    </div>
+
+    <p>
+      <strong>Cheapest tickets</strong>
+    </p>
+    <img
+      src="https://compote.slate.com/images/ad27ef8a-0ea1-46b7-b515-415c4af18528.jpg"
+      width="300"
+    />
+    <ul>
+      <li class="free">Domesitc Bus</li>
+      <li class="discount">Drive Abroad</li>
+      <li class="free">Share your ride</li>
+      <li class="discount extra">Private car</li>
+      <li class="discount">Flight Deals</li>
+    </ul>
+    <button>Buy Now!</button>
+  </body>
+</html>

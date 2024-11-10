@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinkify</title>
+</head>
+<style>
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 600px;
+
+
+}
+h1{
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #8f042b;
+    font-size: 34px;
+    line-height: 48px;
+    margin: 0;
+}
+h2{
+   text-align: center;
+   font-family: Helvetica, Arial, sans-serif;
+   color: #a33c12;
+   font-size: 15pxS;
+   line-height: 48px;
+   margin:0;
+
+}
+img{
+    display: block;
+    margin: 0 auto;
+    width: 720px;
+    max-width: 100%;
+    border-radius: 9px;   
+}
+P{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 17px;
+    margin: 15px 0 13px;
+}
+.link{
+    text-align: center;
+    display: block;
+    margin-top: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    color:#8f042b;
+}
+.link:hover{
+    text-decoration: underline;
+
+}
+.order{
+    display:block;
+    margin:0 auto;
+    background: #83292c;
+    color: white;
+    font-size: 19px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.11);
+    transition: all 200ms case-in-out;
+}
+.order:hover{
+    opacity: 0.8;
+    cursor:grab;
+}
+.make{
+    display:block;
+    margin: 0.3px auto;
+    background: #b3393d;
+    color: white;
+    font-size: 19px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.11);
+    transition: all 200ms case-in-out;
+
+}
+.make:hover{
+    opacity: 0.8;
+    cursor:grab;
+}
+</style>
+<body>
+    <div class="'container">
+        <h1>Drinkify 🍹</h1>
+        <h2>Customized Coktails made for you by <em>YOU!</em></h2>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/114/original/cocktail.jpeg?1671843206" alt="drink">
+        <p>Have you ever thought of customizing ypur favorite coktail and probably sell it online?
+            <br>Well! This is the heaven for the creative and adventurous!!You have the chance to explore new recipes and review your order here. 
+            Here is an online venue for you to sell your creativity.
+            </br><strong>Santé 🥂</strong>
+        </p>
+        <a href="https://www.maliburumdrinks.com/ca/drinks/" target="_blank" class="link" > 
+            👉🏽 You can get help having new recipes here
+        </a>
+        <ul>
+            <button class="order">Order a customized drink</button>
+            <br/>
+            <button class="make">Create your own drink</button>
+        </ul>
+
+    </div>
+</body>
+<script>
+    function order_drink(orderr){
+        let click_order = document.querySelector("h2");
+        click_order.innerHTML = orderr;
+    }
+    
+        
+   function get_address(addresses){
+        let adress = prompt('What is your postal code?');
+        let city = prompt('What city do you live in?');
+        if(city == Tehran){
+        order_drink('The shipping is free to your city');
+        } else{
+          order_drink('The shipping fee is 10$.')
+        }
+    }       
+    
+
+    function get_menu(){
+      let email = prompt('Type in your email please!')
+      order_drink('The menu will be sent to your email.')
+    }
+
+    let clickButton = document.querySelector(".order");
+    clickButton.addEventListener("click", get_address);
+
+    let click_create = document.querySelector('.make')
+    click_create.addEventListener("click",get_menu);
+</script>
+</html>
